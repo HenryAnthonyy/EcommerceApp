@@ -85,4 +85,8 @@ class TTexts {
   static const String forgotPassSubtitle = "Don't worry sometimes people forget too, enter your email and we will send you a reset link";
   static const String resetPassTitle = "Password Reset Email Sent";
   static const String resetPassSubTitle = "Your Account Security is Our Priority, We have sent you a Secure Link To Safely Change your Password and Keep Your Account Protected ";
+
+  // APP BAR 
+  static const String appBarTitle = 'Good day for shopping';
+  static const String appBarSubtitle = 'Henry Anthony';
 }
