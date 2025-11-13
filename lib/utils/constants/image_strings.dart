@@ -20,5 +20,18 @@ class TImages {
   static const String successEmailMessage =
       "assets/images/email_images/success.png";
 
-  static const String resetPassImage = "assets/images/email_images/pixeltrue-welcome-1.png";
+  static const String resetPassImage =
+      "assets/images/email_images/pixeltrue-welcome-1.png";
+
+  // CATEGORIES
+  static const String categoryImage1 =
+      "assets/icons/categories/shoe_prints.png";
+
+  // PROMO IMAGES
+  static const String promoBanner1 =
+      "assets/images/promotion/promo-banner-1.png";
+  static const String promoBanner2 =
+      "assets/images/promotion/promo-banner-2.png";
+  static const String promoBanner3 =
+      "assets/images/promotion/promo-banner-3.png";
 }

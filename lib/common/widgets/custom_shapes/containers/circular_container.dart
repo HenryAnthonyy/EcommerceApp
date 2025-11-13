@@ -7,19 +7,21 @@ class TCircularContainer extends StatelessWidget {
       this.height = 400,
       this.radius = 400,
       this.child,
-      required this.backgroundColor});
+      required this.backgroundColor, this.margin});
 
   final double? width;
   final double? height;
   final double radius;
   final Color backgroundColor;
   final Widget? child;
+  final EdgeInsetsGeometry? margin;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: width,
       height: height,
+      margin: margin,
       // padding: const EdgeInsets.all(0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
