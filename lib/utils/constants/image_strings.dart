@@ -34,4 +34,9 @@ class TImages {
       "assets/images/promotion/promo-banner-2.png";
   static const String promoBanner3 =
       "assets/images/promotion/promo-banner-3.png";
+
+
+
+  // PRODUCT IMAGES
+  static const String productImage1 = "assets/images/products/nike-air-jordan-red.png";
 }

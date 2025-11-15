@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_template/utils/constants/colors.dart';
-import 'package:flutter_app_template/utils/helpers/helper_functions.dart';
 
 class TSectionHeading extends StatelessWidget {
   const TSectionHeading({
@@ -17,7 +16,6 @@ class TSectionHeading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -27,7 +25,7 @@ class TSectionHeading extends StatelessWidget {
           style: Theme.of(context)
               .textTheme
               .headlineSmall!
-              .apply(color: dark ? TColors.white : TColors.dark),
+              .apply(color: TColors.light),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),

@@ -51,6 +51,7 @@ flutter:
     - assets/images/email_images/
     - assets/icons/categories/
     - assets/images/promotion/
+    - assets/images/products/
 
   #------------ LOCAL FONTS -------- #
 
