@@ -4,7 +4,7 @@ import 'package:flutter_app_template/utils/constants/sizes.dart';
 class TGridLayout extends StatelessWidget {
   const TGridLayout({
     super.key,
-    required this.itemCount,
+    this.itemCount = 4,
     this.mainAxisExtent = 288,
     required this.itemBuilder,
   });
@@ -16,15 +16,15 @@ class TGridLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      itemCount: 4,
+      itemCount: itemCount,
       shrinkWrap: true,
-      // padding: const EdgeInsets.only(top: 0),
+      padding: const EdgeInsets.only(bottom: 100),
       physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         mainAxisSpacing: TSizes.gridViewSpacing,
         crossAxisSpacing: TSizes.gridViewSpacing,
-        mainAxisExtent: 288,
+        mainAxisExtent: mainAxisExtent,
       ),
       itemBuilder: itemBuilder,
     );

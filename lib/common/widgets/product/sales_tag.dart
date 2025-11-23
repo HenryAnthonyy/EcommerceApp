@@ -21,7 +21,7 @@ class TSalesTag extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(TSizes.sm),
-        color: TColors.secondary.withOpacity(0.8),
+        color: TColors.secondary.withValues(alpha: 0.8),
       ),
       child: Text(
         discount,

@@ -15,7 +15,7 @@ class TRoundedImage extends StatelessWidget {
     this.fit = BoxFit.contain,
     this.onPressed,
     this.border,
-    this.backgroundColor = TColors.light,
+    this.backgroundColor,
   });
 
   final EdgeInsetsGeometry? padding;

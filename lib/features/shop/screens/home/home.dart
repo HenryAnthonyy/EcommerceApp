@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_template/common/layouts/grid_layout.dart';
-import 'package:flutter_app_template/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:flutter_app_template/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:flutter_app_template/common/widgets/images/promo_slider.dart';
-import 'package:flutter_app_template/common/widgets/images/rounded_image.dart';
 import 'package:flutter_app_template/common/widgets/product/card/product_card_vertical.dart';
-import 'package:flutter_app_template/common/widgets/product/sales_tag.dart';
 import 'package:flutter_app_template/common/widgets/searchbar/search_bar.dart';
 import 'package:flutter_app_template/common/widgets/sections/section_heading.dart';
 import 'package:flutter_app_template/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:flutter_app_template/features/shop/screens/home/widgets/home_categories.dart';
-import 'package:flutter_app_template/utils/constants/colors.dart';
 import 'package:flutter_app_template/utils/constants/image_strings.dart';
 import 'package:flutter_app_template/utils/constants/sizes.dart';
 
@@ -81,10 +77,13 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtnSections),
 
                   // ----PRODUCT CARD VERTICAL---
+                  const TSectionHeading(
+                    headingText: 'Popular Products',
+                  ),
                   TGridLayout(
                     itemCount: 4,
                     itemBuilder: (_, index) => const TProductCardVertical(),
-                  )
+                  ),
                 ],
               ),
             ),
