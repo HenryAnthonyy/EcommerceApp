@@ -10,9 +10,11 @@ class TBrandStockAmountCard extends StatelessWidget {
   const TBrandStockAmountCard({
     super.key,
     this.backgroundColor = Colors.transparent,
+    required this.showBorder,
   });
 
   final Color backgroundColor;
+  final bool showBorder;
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +23,14 @@ class TBrandStockAmountCard extends StatelessWidget {
       child: TRoundedContainer(
         // padding: const EdgeInsets.all(TSizes.sm),
         backgroundColor: backgroundColor,
-        showBorder: true,
+        showBorder: showBorder,
         child: Row(
           children: [
             // icon
-            Flexible(
-              child: const TCircularImage(
+            const Flexible(
+              child: TCircularImage(
                 image: TImages.clothIcon,
+                backgroundColor: Colors.transparent,
               ),
             ),
             const SizedBox(
