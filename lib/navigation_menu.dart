@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_app_template/features/shop/screens/favorites/favorites.dart';
 import 'package:flutter_app_template/features/shop/screens/home/home.dart';
 import 'package:flutter_app_template/features/shop/screens/store/store.dart';
 import 'package:get/get.dart';
@@ -56,9 +57,7 @@ class NavigationMenuController extends GetxController {
   final screens = [
     const HomeScreen(),
     const StoreScreen(),
-    Container(
-      color: Colors.yellow,
-    ),
+    const FavoritesScreen(),
     Container(
       color: Colors.red,
     ),

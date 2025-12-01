@@ -9,7 +9,7 @@ class TFormatter {
 
 
   static String formatCurrency(double amount) {
-    return NumberFormat.currency(locale: 'en_UG', symbol: '\¥').format(amount);
+    return NumberFormat.currency(locale: 'en_UG', symbol: '¥').format(amount);
   }
 
 
