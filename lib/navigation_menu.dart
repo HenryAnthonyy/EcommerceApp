@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_app_template/features/personalization/screens/settings/settings.dart';
 import 'package:flutter_app_template/features/shop/screens/favorites/favorites.dart';
 import 'package:flutter_app_template/features/shop/screens/home/home.dart';
 import 'package:flutter_app_template/features/shop/screens/store/store.dart';
@@ -38,7 +39,7 @@ class NavigationMenu extends StatelessWidget {
                   NavigationDestination(
                       icon: Icon(Iconsax.heart_copy), label: 'Favorites'),
                   NavigationDestination(
-                      icon: Icon(Iconsax.user_copy), label: 'Profile'),
+                      icon: Icon(Iconsax.setting_2_copy), label: 'Settings'),
                 ],
               ),
               // ),
@@ -58,8 +59,6 @@ class NavigationMenuController extends GetxController {
     const HomeScreen(),
     const StoreScreen(),
     const FavoritesScreen(),
-    Container(
-      color: Colors.red,
-    ),
+    const SettingsScreen(),
   ];
 }

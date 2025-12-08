@@ -38,4 +38,8 @@ class TImages {
   // ICONS
   static const String clothIcon =
       "assets/icons/categories/icons8-tailors-dummy-64.png";
+
+
+  // PROFILE
+  static const String userProfile1 = "assets/images/profile/dicebear1.png";
 }
